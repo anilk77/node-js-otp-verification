@@ -12,7 +12,7 @@ router.post('/send-otp', function (req, res) {
     client.messages
       .create({body: 'Your OTP is: '+otp, from: '+19389999952', to: req.body.mobile_number })
       .then(message => res.json({ success: true, message: 'OTP send successfully!', otp: otp }) )
-	  .catch(e => { res.json({ success: false, message: e.message, from: 'twilio api' }) });
+	  .catch(e => { res.json({ success: false, message: e.message }) });
 })
 
 module.exports = router;

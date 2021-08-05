@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<body
+    style="background-color: #eceff4;padding: 50px 20px;  color: #514d6a;  line-height: 1.7;font-family: 'Nunito Sans', sans-serif;">
+    <div style="max-width: 700px; margin: 0px auto; font-size: 14px ">
+        <table cellPadding="0" cellSpacing="0" style=" width: 100%; margin-bottom: 20px; border: 0px ">
+            <tbody>
+                <tr>
+                    <td style=" vertical-align: top ">
+                        <img src="{{imgUrl}}logo-wide.png" alt="{{siteName}}" style=" height: 40px " />
+                    </td>
+                    <td style=" text-align: right; vertical-align: middle ">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="padding: 40px 40px 20px 40px; background: #fff ">
+
+            <table cellPadding="0" cellSpacing="0" style=" width: 100%; border: 0px ">
+                <tbody>
+                    <tr>
+                        <td>
+                            {% autoescape false %} {{ Body }} {% endautoescape %}
+                            <p>
+                                Regards,
+                                <br />
+                                {{siteName}} Support Team<br >
+                                <a href="mailto:support@maksab.io">support@maksab.io</a>
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="text-align: center;font-size: 12px;color: #a09bb9;margin-top: 20px;">
+            <p>
+                {{siteName}} {{address}}
+                <br />
+                Notice something wrong?&nbsp; Contact our <a href="mailto:{{supportMail}}"
+                    style="color: #01a8fe;text-decoration: underline">support team</a>&nbsp; and We'll be happy to help.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- <div
+        style="max-width: 600px; margin: 0px auto; background-color: #fff; box-shadow: 0px 20px 50px rgba(0,0,0,0.05);">
+        <table style="width: 100%;">
+            <tr>
+                <td style="background-color: #fff;padding: 20px;">
+                    <img alt="" siteName"" src="" imgUrl"logo-blue.png?v1" width="150" height="50">
+                </td>
+            </tr>
+        </table>
+        <div style="padding: 60px 70px; border-top: 1px solid rgba(0,0,0,0.05);">
+            {% autoescape false %} " Body " {% endautoescape %}
+            <h4 style="margin-bottom: 10px;">Need Help?</h4>
+
+            <div style="color: #A5A5A5; font-size: 12px;">
+                <p>
+                    If you have any questions you can simply reply to this email or find our contact information below.
+                    Also contact us at <a href="mailto:" supportMail""
+                        style="text-decoration: underline; color: #4B72FA;">"supportMail"</a>
+                </p>
+            </div>
+        </div>
+        <div style="background-color: #F5F5F5; padding: 40px; text-align: center;">
+
+            <div style="margin-bottom: 20px;">
+                <s<a href=""twitterLink"" style="display: inline-block; margin: 0px 10px;">
+                    <img alt="Twitter" src=""imgUrl"twitter.png?v1" width="28px" height="28px">
+                </a>
+
+                <a href=""facebookLink"" style="display: inline-block; margin: 0px 10px;">
+                    <img alt="Facebook" src=""imgUrl"facebook.png?v1" width="28px" height="28px">
+                </a>
+
+                <a href=""linkedinLink"" style="display: inline-block; margin: 0px 10px;">
+                    <img alt="Linkedin" src=""imgUrl"linkedin.png?v1" width="28px" height="28px">
+                </a>
+
+                <a href=""instagramLink"" style="display: inline-block; margin: 0px 10px;">
+                    <img alt="Instagram" src=""imgUrl"instagram.png?v1" width="28px" height="28px">
+                </a>>
+            </div>
+
+            <div style="margin-bottom: 20px;display: none !important;">
+
+                <a href="" contactUsUrl""
+                    style="text-decoration: underline; font-size: 14px; letter-spacing: 1px; margin: 0px 15px; color: #261D1D;">Contact
+                    Us</a>
+
+                <a href="" privacyPolicyUrl""
+                    style="text-decoration: underline; font-size: 14px; letter-spacing: 1px; margin: 0px 15px; color: #261D1D;">Privacy
+                    Policy</a>
+            </div>
+
+            <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.05);">
+                <div style="color: #A5A5A5; font-size: 10px; margin-bottom: 5px;">
+                    "address"
+                </div>
+                <div style="color: #A5A5A5; font-size: 10px;">
+                    Copyright "currentYear" "siteName". All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div> -->
+</body>
+
+</html>

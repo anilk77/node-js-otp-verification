@@ -1,0 +1,679 @@
+<html>
+
+<head>
+  <meta charset="utf8">
+  <title>GET QUALIFIED DETAILS</title>
+  <style>
+    @charset "UTF-8";
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    code,
+    del,
+    dfn,
+    em,
+    font,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    tt,
+    var,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td {
+      margin: 10px;
+      padding: 10px;
+      border: 0;
+      outline: 0;
+      font-weight: inherit;
+      font-style: inherit;
+      font-size: 16px;
+      font-family: inherit;
+      vertical-align: baseline;
+      text-transform: uppercase;
+    }
+
+    :focus {
+      outline: 0;
+    }
+
+    body {
+      padding: 0 !important;
+      margin: 0 !important;
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      background-color: #e1e0db;
+      background-repeat: repeat;
+      font-size: 16px !important;
+      line-height: 16px !important;
+      color: #000;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    #wrapper {
+      width: 969px;
+      margin: 0 auto;
+    }
+
+    .wrapper-top {
+      width: 969px;
+      height: 19px;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+    }
+
+    .wrapper-mid {
+      width: 969px;
+      margin: 0 auto;
+      padding-bottom: 40px;
+    }
+
+    .wrapper-bottom {
+      width: 969px;
+      height: 22px;
+      padding: 0;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+    }
+
+    #paper {
+      width: auto !important;
+      margin: 0 auto;
+    }
+
+    .paper-top {
+      width: auto !important;
+      margin: 0 auto;
+      height: 126px;
+    }
+
+    #paper-mid {
+      width: auto !important;
+      margin: 0 auto;
+      display: block;
+      padding: 0;
+      overflow: hidden;
+      padding-bottom: 10px !important;
+      padding-top: 7px;
+      padding-left: 15px !important;
+    }
+
+    .paper-bottom {
+      width: 828px;
+      height: 18px;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+    }
+
+    .entry {
+      width: 720px;
+      display: block;
+      padding-top: 55px;
+      clear: both;
+      margin-left: 4px;
+    }
+
+    h1 {
+      width: 250px;
+      font-size: 42px;
+      color: #1b4491;
+      margin-bottom: 3px;
+      clear: both;
+    }
+
+    h1 span {
+      font-size: 21px;
+      display: block;
+      color: #1b4491;
+      margin-top: -5px;
+    }
+
+    p {
+      width: 530px !important;
+      margin: 0 15px 0 0 !important;
+      float: right !important;
+      word-break: break-word !important;
+    }
+
+    p img {
+      float: right;
+      margin-left: 20px;
+      padding-left: 10px;
+    }
+
+    div.content {
+      clear: both;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      display: block;
+      padding-top: 15px;
+    }
+
+    h3 {
+      width: 180px;
+      text-align: left !important;
+      float: left;
+      padding: 0;
+      clear: both;
+      font-size: 15px;
+      color: #7b90b5;
+      padding-right: 10px !important;
+    }
+
+    h4 {
+      width: auto !important;
+      text-align: left !important;
+      float: left;
+      padding: 0;
+      clear: both;
+      font-size: 13px !important;
+      color: #7b90b5;
+    }
+
+    h5 {
+      width: auto !important;
+      text-align: left !important;
+      float: left;
+      padding: 0;
+      clear: both;
+      font-size: 12px;
+      color: #7b90b5;
+    }
+
+    h6 {
+      width: auto !important;
+      text-align: left !important;
+      float: left;
+      padding: 0;
+      clear: both;
+      font-size: 11px;
+      color: #7b90b5;
+    }
+
+    em {
+      font-family: Georgia, "Times New Roman", serif;
+      font-style: italic;
+      color: #777777;
+      font-size: 12px;
+      display: block;
+      padding-top: 3px;
+    }
+
+    img.portrait {
+      background-repeat: no-repeat;
+      width: 109px;
+      height: 109px;
+      padding-top: 20px;
+      padding-left: 11px;
+      padding-right: 11px;
+      padding-bottom: 36px;
+      margin-left: 50px;
+      float: left;
+    }
+
+    table {
+      width: auto;
+      border-collapse: collapse;
+      border-bottom: 1px solid #999;
+      border-top: 1px solid #999;
+    }
+
+    table td {
+      padding: 15px;
+      border-right: 1px solid #999;
+    }
+
+    table td:hover {
+      background-color: #f2f2f2;
+    }
+
+    table th {
+      padding: 10px;
+      padding-top: 0;
+      color: #7b90b5;
+      text-align: left;
+      border-right: 1px solid #999;
+    }
+
+    table td.center {
+      text-align: center;
+    }
+
+    table td.last {
+      background: none;
+    }
+
+    table th.center {
+      text-align: center;
+    }
+
+    table th.last {
+      background: none;
+    }
+
+    table tr {
+      border-left: 1px solid #999;
+      border-top: 1px solid #999;
+    }
+
+    table tr.caption {
+      border-left: 1px solid #999;
+    }
+
+    abbr,
+    acronym {
+      border-bottom: 1px solid #7b90b5;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    small {
+      font-size: 70%;
+    }
+
+    big {
+      font-size: 1.2em;
+    }
+
+    fieldset,
+    legend {
+      float: right;
+      width: 500px;
+      padding: 0;
+      margin: 0;
+      margin-left: 40px;
+    }
+
+    h1.warn {
+      color: #1b4491;
+      font-size: 18px;
+      margin-top: 30px;
+      padding: 50px;
+      text-align: center;
+    }
+
+    label {
+      float: left;
+      width: 40px;
+      height: 28px;
+      margin-bottom: 10px;
+      clear: both;
+      color: #1b4491;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    a,
+    a:hover,
+    a:visited,
+    a:active {
+      color: #7b90b5;
+      text-decoration: none;
+    }
+
+    #wrapper,
+    .wrapper-mid {
+      background: none;
+    }
+
+    .wrapper-top,
+    .wrapper-bottom {
+      display: none;
+    }
+
+    #paper {
+      width: 820px;
+      margin: 0 auto;
+    }
+
+    .paper-top,
+    .paper-bottom {
+      display: none;
+    }
+
+    #paper-mid {
+      width: 820px;
+      margin: 0 auto;
+      background-color: #FFF;
+      display: block;
+      padding: 0;
+      overflow: hidden;
+      padding-bottom: 35px;
+      padding-top: 7px;
+    }
+
+    .entry {
+      width: 820px;
+      display: block;
+      padding-top: 30px !important;
+      clear: both;
+    }
+
+    h1 {
+      width: 500px;
+      font-size: 42pt;
+      color: #1b4491;
+      margin-bottom: 0;
+    }
+
+    h1 span {
+      font-size: 21pt;
+      display: block;
+      margin-top: 20px;
+      color: #1b4491;
+    }
+
+    h2 {
+      width: 250px;
+      height: 23px;
+      text-align: left !important;
+      float: left;
+      padding: 0;
+      margin: 0;
+      clear: both;
+      font-size: 20pt;
+      color: #1b4491;
+    }
+
+    p {
+      width: 500px !important;
+      float: right;
+    }
+
+    h3 {
+      width: 250px;
+      text-align: right;
+      float: left;
+      padding: 0;
+      clear: both;
+      font-size: 13pt;
+      color: black;
+    }
+
+    em {
+      font-family: Georgia, "Times New Roman", serif;
+      font-style: italic;
+      color: #999;
+      font-size: 12pt;
+      display: block;
+      padding-top: 0;
+    }
+
+    ul.info {
+      float: right;
+      width: 640px !important;
+      background: none;
+      list-style: square;
+    }
+
+    img.portrait {
+      border: 1px solid #000;
+      padding: 10px;
+    }
+
+    .self {
+      width: 500px;
+      float: left;
+      padding-top: 11px;
+      margin-left: 0;
+      margin-left: 38px;
+    }
+
+    .social {
+      display: none;
+    }
+
+    pre {
+      width: 500px;
+      margin-left: 40px;
+      float: right;
+    }
+
+    abbr,
+    acronym {
+      border-bottom: 1px solid #7b90b5;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    #message {
+      display: none;
+    }
+
+    .works {
+      display: none;
+    }
+
+    .hide {
+      display: none !important;
+    }
+
+    .main-title {
+      width: auto !important;
+    }
+
+    .clearfix {
+      clear: both !important;
+    }
+
+    .sub-header {
+      font-size: 18px !important;
+      width: auto !important;
+    }
+
+    .subheader-margin {
+      padding-top: 20px !important;
+    }
+
+    .text-seperator {
+      float: left !important;
+      width: 15px !important;
+    }
+
+    .page {
+      position: relative;
+      overflow: hidden;
+      padding: 0.8in;
+      page-break-after: always;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper" class="wrapper">
+    <div class="wrapper-top"></div>
+    <div class="wrapper-mid">
+      <div id="paper">
+        <div class="paper-top"></div>
+        <div id="paper-mid">
+          <table>
+            <tr>
+              <td>USER QUALIFICATION</td>
+              <td>{{qualifiedStatus}}</td>
+            </tr>
+            <tr>
+              <td>CLIENT CLASSIFICATION</td>
+              <td>{{userRole}}</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="center"><b>QUESTIONNAIRE : FINANCIAL EXPERIENCE & UNDERSTANDING</b></td>
+            </tr>
+            <tr>
+              <td>CLIENT NAME</td>
+              <td>{{clientName}}</td>
+            </tr>
+
+            <tr>
+              <td colspan="2"><b>WHAT IS YOUR UNDERSTANDING OF MARKETS, INVESTMENT AND RISK?</b></td>
+            </tr>
+
+            <tr>
+              <td>COMPANY RISK: MANAGEMENT; EARNINGS; POSSIBILITY OF BANKRUPTCY</td>
+              <td>{{companyRisk}}</td>
+            </tr>
+
+            <tr>
+              <td>COUNTRY RISK: POLITICAL; ECONOMIC; DEMOGRAPHIC FACTORS</td>
+              <td>{{countryRisk}}</td>
+            </tr>
+
+            <tr>
+              <td>CREDIT RISK: FAILURE TO INTREST OR CAPITAL ON TIME AT ALL;</td>
+              <td>{{creditRisk}}</td>
+            </tr>
+
+            <tr>
+              <td>CURRENCY RISK: ADVERSE CURRENCY FLUCTUATIONS</td>
+              <td>{{currencyRisk}}</td>
+            </tr>
+
+            <tr>
+              <td>INFLATION RISK: EROSION OF ASSET VALUES AND INVESTMENT RETURNS</td>
+              <td>{{inflationRisk}}</td>
+            </tr>
+
+            <tr>
+              <td>INTREST RATE RISK: EROSION OF INCOME ANDCAPITAL WHEN INTREST RATES RISE</td>
+              <td>{{interestRateRisk}}</td>
+            </tr>
+
+            <tr>
+              <td>LIQUIDITY RISK: THE INABILITY TO READILY LIQUIDATE AN INVESTMENT</td>
+              <td>{{liquidityRisk}}</td>
+            </tr>
+
+            <tr>
+              <td>VOLATILITY RISK: THE VARIABILITY OF ASSET VALUES AND INVESTMENTS RETURNS</td>
+              <td>{{volatilityRisk}}</td>
+            </tr>
+
+            <tr>
+              <td>MARKET RISK: RISK APPLICABLE TO AN ENTIRE ASSET CLASS, E.G. RECESSION</td>
+              <td>{{marketRisk}}</td>
+            </tr>
+
+            <tr>
+              <td colspan="2"><b>FOR HOW MANY YEARS HAVE BEEN ACTIVE IN FINANCIAL MARKETS AND INVESTMENTS?</b></td>
+            </tr>
+
+            <tr>
+              <td colspan="2">{{activeInFinancialMarketAndInvestmentText}}</td>
+            </tr>
+            <tr>
+              <td colspan="2"><b>ON WHAT BASIS HAS YOUR PORTFOLIO BEEN MANAGED?</b></td>
+            </tr>
+
+            <tr>
+              <td colspan="2">{{portfolioText}}</td>
+            </tr>
+
+            <tr>
+              <td colspan="2"><b>WITH WHAT FREQUENCY HAVE YOU DEALT IN FINANCIAL MARKETS?</b></td>
+            </tr>
+
+            <tr>
+              <td colspan="2">{{marketFrequency}}</td>
+            </tr>
+
+            <tr>
+              <td colspan="2"><b>WHAT TYPE OF TRANSACTION HAVE YOU UNDERTAKEN?</b></td>
+            </tr>
+
+            <tr>
+              <td colspan="2">{{undertakenTransactionTypeText}}</td>
+            </tr>
+
+            <tr>
+              <td colspan="2"><b>WITH IS THE TYPICAL SIZE OF YOUR INVESTMENT TRANSACTIONS?</b></td>
+            </tr>
+
+            <tr>
+              <td colspan="2">{{investmentSizeText}}</td>
+            </tr>
+
+            <tr>
+              <td colspan="2"><b>DO YOU HOLD A RELEVANT QUALIFICATION RELATING TO FINANCIAL MARKETS?</b></td>
+            </tr>
+
+            <tr>
+              <td colspan="2">{{relaventQualificationText}}</td>
+            </tr>
+
+            <tr>
+              <td colspan="2"><b>WHAT OTHER KNOWLEDGE OR EXPERIENCE DOYOU HAVE THAT MAY BE RELEVANT?</b></td>
+            </tr>
+
+            <tr>
+              <td colspan="2">{{experiance}}</td>
+            </tr>
+
+            <tr>
+              <td colspan="2"><b>Digital Signature</b></td>
+            </tr>
+
+            <tr>
+              <td colspan="2">
+                <img src="{{qualifiedSignature}}" height="80" alt="Qualify Signature" />
+              </td>
+            </tr>
+
+          </table>
+        </div>
+        <div class="clear"></div>
+        <div class="paper-bottom"></div>
+      </div>
+    </div>
+    <div class="wrapper-bottom"></div>
+  </div>
+</body>
+
+</html>
